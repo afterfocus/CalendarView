@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarViewCell" customModule="CalendarView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarViewCell" id="drn-MO-259" customClass="CalendarViewCell" customModule="CalendarView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eHM-vR-dUO">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="55"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyx-hw-Xp9">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="1"/>
+                        <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="CkL-Ln-69h" customClass="HairlineConstraint" customModule="CalendarView" customModuleProvider="target"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bcw-nV-pdm">
+                        <rect key="frame" x="9.5" y="5.5" width="31" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="Tr7-6S-uLM"/>
+                            <constraint firstAttribute="width" constant="31" id="lb7-ER-az8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="15.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rU-27-OfT">
+                        <rect key="frame" x="15.5" y="10.5" width="19.5" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView clearsContextBeforeDrawing="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="IuH-1T-ruc">
+                        <rect key="frame" x="25" y="41" width="0.0" height="5"/>
+                        <subviews>
+                            <view hidden="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qC-Hc-YGM">
+                                <rect key="frame" x="0.0" y="0.0" width="5" height="5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="7CM-HX-CSx"/>
+                                    <constraint firstAttribute="width" constant="5" id="Cdd-Eb-Cmu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rpq-Jz-e91">
+                                <rect key="frame" x="0.0" y="0.0" width="5" height="5"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="Ch3-Ld-pQw"/>
+                                    <constraint firstAttribute="width" constant="5" id="ZLG-6Y-Z8B"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAZ-KG-lBf">
+                                <rect key="frame" x="0.0" y="0.0" width="5" height="5"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="ABA-sj-RhH"/>
+                                    <constraint firstAttribute="height" constant="5" id="Amb-Y2-UnN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIh-Xq-Tol">
+                                <rect key="frame" x="0.0" y="0.0" width="5" height="5"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="ZRw-JJ-2vt"/>
+                                    <constraint firstAttribute="height" constant="5" id="w7m-g4-Gae"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kM7-zA-Ol0">
+                                <rect key="frame" x="0.0" y="0.0" width="5" height="5"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="hxY-pG-OfW"/>
+                                    <constraint firstAttribute="height" constant="5" id="qcF-vO-UAT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1x-I8-YyB">
+                                <rect key="frame" x="0.0" y="0.0" width="5" height="5"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="Igc-TB-hNO"/>
+                                    <constraint firstAttribute="height" constant="5" id="U8K-hY-8lL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="Hdu-xJ-yBy"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="35" id="Ovy-G5-Rnr"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IuH-1T-ruc" firstAttribute="centerY" secondItem="eHM-vR-dUO" secondAttribute="centerY" multiplier="1.25" constant="9" id="356-ID-eG5"/>
+                    <constraint firstItem="3rU-27-OfT" firstAttribute="centerY" secondItem="eHM-vR-dUO" secondAttribute="centerY" multiplier="0.77" id="7Hr-vH-scU"/>
+                    <constraint firstItem="Bcw-nV-pdm" firstAttribute="centerX" secondItem="3rU-27-OfT" secondAttribute="centerX" id="8jA-k9-DGN"/>
+                    <constraint firstItem="IuH-1T-ruc" firstAttribute="centerX" secondItem="eHM-vR-dUO" secondAttribute="centerX" id="EWh-D9-E3I"/>
+                    <constraint firstItem="cyx-hw-Xp9" firstAttribute="leading" secondItem="eHM-vR-dUO" secondAttribute="leading" id="fVX-UM-ELO"/>
+                    <constraint firstAttribute="trailing" secondItem="cyx-hw-Xp9" secondAttribute="trailing" id="p1u-65-FIl"/>
+                    <constraint firstItem="3rU-27-OfT" firstAttribute="centerX" secondItem="eHM-vR-dUO" secondAttribute="centerX" id="pKA-dF-Ijk"/>
+                    <constraint firstItem="cyx-hw-Xp9" firstAttribute="top" secondItem="eHM-vR-dUO" secondAttribute="top" id="r3R-Xo-udW"/>
+                    <constraint firstItem="Bcw-nV-pdm" firstAttribute="centerY" secondItem="3rU-27-OfT" secondAttribute="centerY" id="xtQ-WQ-9Vb"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="circleView" destination="Bcw-nV-pdm" id="iVm-PJ-jn6"/>
+                <outlet property="numberLabel" destination="3rU-27-OfT" id="86Q-Vl-c6R"/>
+                <outletCollection property="visitIndicators" destination="7qC-Hc-YGM" collectionClass="NSMutableArray" id="74C-2d-a50"/>
+                <outletCollection property="visitIndicators" destination="rpq-Jz-e91" collectionClass="NSMutableArray" id="L39-Sx-ZkU"/>
+                <outletCollection property="visitIndicators" destination="dAZ-KG-lBf" collectionClass="NSMutableArray" id="t3Y-br-zzn"/>
+                <outletCollection property="visitIndicators" destination="GIh-Xq-Tol" collectionClass="NSMutableArray" id="0yc-Dy-bw1"/>
+                <outletCollection property="visitIndicators" destination="kM7-zA-Ol0" collectionClass="NSMutableArray" id="wdp-Nq-VpP"/>
+                <outletCollection property="visitIndicators" destination="f1x-I8-YyB" collectionClass="NSMutableArray" id="pcg-n5-UlE"/>
+            </connections>
+            <point key="canvasLocation" x="172" y="139"/>
+        </collectionViewCell>
+    </objects>
+</document>
